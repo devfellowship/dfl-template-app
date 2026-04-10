@@ -1,0 +1,11 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ci:
+    uses: devfellowship/dfl-ci/.github/workflows/ci.yml@main
+    secrets: inherit

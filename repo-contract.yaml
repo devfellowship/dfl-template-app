@@ -1,0 +1,18 @@
+schema: v1
+name: dfl-template-app
+kind: template
+description: DFL template repo — Vite + React + Tailwind v4 + @dfl/components + auth boilerplate
+team: dfl
+visibility: public
+
+stack:
+  runtime: node
+  framework: react
+  bundler: vite
+  css: tailwindcss@4
+  language: typescript
+
+governance:
+  ci: devfellowship/dfl-ci/.github/workflows/ci.yml@main
+  renovate: github>devfellowship/dfl-hq:renovate-config
+  eslint: eslint.config.js
