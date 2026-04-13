@@ -7,7 +7,7 @@ This repo was scaffolded from [dfl-template-app](https://github.com/devfellowshi
 - **Vite** + **React 19** + **TypeScript**
 - **Tailwind CSS v4** — `@tailwindcss/vite` plugin, CSS-native config (no `tailwind.config.js`)
 - **`@dfl/components`** — DFL shared component library
-- **Supabase** — auth via magic link (see `src/lib/supabase.ts`)
+- **Supabase** — auth via email + password (uses `AuthProvider` and `LoginPage` from `@dfl/components`)
 - **React Router v7**
 
 ## Dev
