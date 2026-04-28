@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { LoginPage as DflLoginPage } from "@dfl/components";
+import { LoginPage as DflLoginPage } from "@devfellowship/components";
 
 export default function LoginPage() {
   const navigate = useNavigate();
