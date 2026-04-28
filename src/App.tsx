@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { AuthProvider, useAuth } from "@dfl/components";
+import { AuthProvider, useAuth } from "@devfellowship/components";
 import { supabase } from "./lib/supabase";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";

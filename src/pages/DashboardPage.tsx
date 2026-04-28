@@ -1,4 +1,4 @@
-import { useAuth } from "@dfl/components";
+import { useAuth } from "@devfellowship/components";
 
 export default function DashboardPage() {
   const { logout } = useAuth();

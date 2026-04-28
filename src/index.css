@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "@devfellowship/components/styles";
+@source "../node_modules/@devfellowship/components/dist";
 
 @theme {
   --color-brand-50: oklch(97% 0.02 250);
