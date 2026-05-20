@@ -1,0 +1,25 @@
+# Centralized dependency vulnerability scanning — sources from devfellowship/dfl-ci.
+# Plan: https://plans.tainanfidelis.com/20260520-security-audit-deps-vulns
+#
+# Defaults: gate CI on CRITICAL findings · weekly Monday 06:00 UTC scan · PR + manual dispatch.
+# Override severity/gate with `with:` only if you have a documented reason.
+name: vuln-scan
+
+on:
+  pull_request:
+    branches: [main, master]
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  security-events: write
+
+jobs:
+  scan:
+    uses: devfellowship/dfl-ci/.github/workflows/vuln-scan.yml@main
+    with:
+      severity: CRITICAL
+      gate: true
